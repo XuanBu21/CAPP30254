@@ -5,7 +5,7 @@
 - `writeup.ipynb`: writeup for the detailed analysis of the results
 - `Analysis Report.pdf`: analytical report of the performances of different models
 
-To test the code, simply store the file `run_pipeline.py` and the file `projects_2012_2013.csv` in a same directory, then run:
+To test the code, download the file `projects_2012_2013.csv` in a folder called data, then run:
 ```
 $ python3 run_pipeline.py
 ```
