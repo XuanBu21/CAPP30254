@@ -9,4 +9,5 @@ To test the code, download the file `projects_2012_2013.csv` in a folder called 
 ```
 $ python3 run_pipeline.py
 ```
+Note: the process of running the pipeline is very long, all detailed results can be found in `writeup.ipynb`.
 
