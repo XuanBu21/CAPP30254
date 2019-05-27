@@ -1,4 +1,5 @@
 # CAPP 30254 HW5
+## Files
 - `pipeline.py`: main codes of the functions for this homework
 - `run_pipeline.py`: python file to run the functions in `pipeline.py`
 - `classifiers.py`: python file for building models
@@ -7,14 +8,15 @@
 - `writeup.ipynb`: writeup for the detailed analysis of the results
 - `Analysis Report.pdf`: analytical report of the performances of different models
 
+## Instruction of Running Codes
 To test the code, download the file `projects_2012_2013.csv` in a same folder with other python files, then run:
 ```
 $ python3 run_pipeline.py
 ```
 Note: the process of running the pipeline is very long, all detailed results can be found in `writeup.ipynb`.
 
-## Based on the feedback of Assignment 3, 
-## I revised my codes in the following parts:
+## Notes of Revision 
+`Based on the feedback of Assignment 3, I revised my codes in the following parts:`
 1.	Instead of building classifiers one by one in a hard-coding way, I build a function called `build_classifier` to modularize the process of building classifier with different parameter grids.
 2.	Discretizing, imputing and creating dummies after splitting datasets. First, using mean of training set to impute the missing values for both training set and testing set with function `fill_missing`. Second, using unique values of training set to create dummies for both training set and testing set with function `create_dummies`.
 3.	Leaving 60 days gap between training set and testing set when implementing temporal validation in `temporal_validation.py`.
