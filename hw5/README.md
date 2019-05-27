@@ -16,7 +16,7 @@ $ python3 run_pipeline.py
 Note: the process of running the pipeline is very long, all detailed results can be found in `writeup.ipynb`.
 
 ## Notes of Revision 
-`Based on the feedback of Assignment 3, I revised my codes in the following parts:`
+**Based on the feedback of Assignment 3, I revised my codes in the following parts:**
 1.	Instead of building classifiers one by one in a hard-coding way, I build a function called `build_classifier` to modularize the process of building classifier with different parameter grids.
 2.	Discretizing, imputing and creating dummies after splitting datasets. First, using mean of training set to impute the missing values for both training set and testing set with function `fill_missing`. Second, using unique values of training set to create dummies for both training set and testing set with function `create_dummies`.
 3.	Leaving 60 days gap between training set and testing set when implementing temporal validation in `temporal_validation.py`.
